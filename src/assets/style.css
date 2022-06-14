@@ -5,6 +5,7 @@
     --green: #6FCF97;
     --main-color: #1F2041;
     --bg-color: #E5E5E5;
+    --white: #fff;
 }
 
 body {
@@ -13,22 +14,58 @@ body {
     font-size: 14px;
     font-weight: 400;
 }
-
 a {
     text-decoration: none;
 }
-
 ul {
    list-style-type: none;
 }
-
 img {
     max-width: 100%;
 }
-
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+.container {
+    margin: 0 5px;
+    max-width: 1155px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* ======= HEADER ======= */
+.header__logout {
+    max-height: 70px;
+    background-color: var(--white);
+}
+.header__logo {
+    margin-right: 275px;
+}
+
+.header__nav-raw,
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.auth-btn {
+    width: 87px;
+}
+.registr-btn {
+    width: 196px;
+}
+.auth-btn,
+.registr-btn {
+    max-height: 34px;
+    border-radius: 22px;
 }
